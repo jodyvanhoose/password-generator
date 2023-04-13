@@ -164,3 +164,56 @@ input:checked + label:after {
 label:active:after {
   width: 50px;
 }
+
+
+@media (max-width: 600px){
+    .container{
+        /* margin: 40px 0 0 52px; */
+        margin: 40px auto;
+        
+        max-width: 550px;
+    }
+
+    .title{
+        font-size: 63px;
+        margin-bottom: 2rem;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+    }
+
+    .title__text{
+        font-size: 30px;
+        margin-bottom: 5rem;
+    }
+
+    .btn{
+        font-size: 30px;
+        padding: 15px 19px 15px 17px;
+        margin: 2rem auto 4rem;
+    }
+
+    .password-display{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 40px;
+    }
+    
+    .line{
+        width: 100%;
+    }
+
+    .password-display__section{
+        margin: 2rem 0 2rem 0;
+    }
+
+    .password-display p, .password-display input{
+        margin: 0 0 5px 0;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        width: 250px;
+        line-height: 40px;
+        
+    }
+}
