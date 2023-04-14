@@ -166,37 +166,40 @@ label:active:after {
 }
 
 
-@media (max-width: 600px){
+@media (min-width:600px){
     .container{
         /* margin: 40px 0 0 52px; */
         margin: 40px auto;
-        
-        max-width: 550px;
+        padding: 5rem;
+        max-width: 1000px;
     }
 
     .title{
-        font-size: 63px;
+        font-size: 8rem;
         margin-bottom: 2rem;
         font-weight: 800;
         letter-spacing: -0.025em;
+        text-align: center;
     }
 
     .title__text{
-        font-size: 30px;
+        font-size: 3rem;
         margin-bottom: 5rem;
+        text-align: center;
     }
 
     .btn{
-        font-size: 30px;
-        padding: 15px 19px 15px 17px;
-        margin: 2rem auto 4rem;
+        font-size: 3rem;
+        padding: 1em 1.2em 1em 1.2em;
+        margin: 2rem auto 4rem auto;
+        display: block;
     }
 
     .password-display{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         column-gap: 40px;
     }
     
@@ -210,10 +213,61 @@ label:active:after {
 
     .password-display p, .password-display input{
         margin: 0 0 5px 0;
-        padding-top: 10px;
+        padding-top: 1rem;
         padding-bottom: 5px;
-        width: 250px;
-        line-height: 40px;
+        width: 400px;
+        line-height: 5rem;
         
     }
+
+    .material-symbols-outlined{
+        font-size: 2.5rem;
+    }
+
+
+
+
+    input[type=checkbox]{
+        height: 0;
+        width: 0;
+        visibility: hidden;
+        margin-top: 0;
+      }
+      
+      label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 200px;
+        height: 100px;
+        background: #4ADF86;
+        display: block;
+        border-radius: 100px;
+        position: relative;
+        margin-top: 0;
+      }
+      
+      label:after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 100px;
+        height: 96px;
+        background: #fff;
+        border-radius: 90px;
+        transition: 0.3s;
+      }
+      
+      input:checked + label {
+        background: #273549;
+      }
+      
+      input:checked + label:after {
+        left: calc(100% - 2px);
+        transform: translateX(-100%);
+      }
+      
+      label:active:after {
+        width: 50px;
+      }
 }
