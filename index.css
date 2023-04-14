@@ -166,7 +166,7 @@ label:active:after {
 }
 
 
-@media (min-width:600px){
+@media (max-width:600px){
     .container{
         /* margin: 40px 0 0 52px; */
         margin: 40px auto;
